@@ -1,5 +1,9 @@
 # ❤️ Heart Disease Prediction using Machine Learning
 
+## 🚀 Live Demo
+
+👉 [Click here to open the Heart Disease Prediction App](https://heart-disease-prediction-drgkmpy7xjymmgxexwkdjx.streamlit.app/)
+
 A Streamlit machine-learning demonstration using the UCI Heart Disease dataset and Logistic Regression.
 
 > Educational project only. This is not a medical diagnostic system.
