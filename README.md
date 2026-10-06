@@ -1,34 +1,44 @@
-#  Heart Disease Prediction Using Machine Learning
+# ❤️ Heart Disease Prediction using Machine Learning
 
-This project demonstrates how supervised machine learning can be used to classify records from the UCI Heart Disease dataset.
+A Streamlit machine-learning demonstration using the UCI Heart Disease dataset and Logistic Regression.
 
-## Project Objective
+> Educational project only. This is not a medical diagnostic system.
 
-The objective is to build a machine-learning classification system using clinical attributes and provide a simple web interface using Streamlit.
+## Run locally
+```bash
+pip install -r requirements.txt
+streamlit run app.py
+```
 
-## Technology Used
+## Deploy on Streamlit Community Cloud
+1. Create a GitHub repository.
+2. Upload the files in this folder.
+3. Open Streamlit Community Cloud and connect the repository.
+4. Select `app.py` as the main file.
+5. Deploy.
 
-- Python
-- Pandas
-- NumPy
-- Scikit-learn
-- Logistic Regression
-- Streamlit
-- UCI Heart Disease Dataset
+The app downloads the UCI dataset and trains the model automatically. No model file needs to be committed to GitHub.
 
-## Machine Learning Workflow
+## Workflow
+Dataset → cleaning → missing-value handling → preprocessing → Logistic Regression → Streamlit prediction interface.
 
-```text
-UCI Heart Disease Dataset
-        ↓
-Data Cleaning
-        ↓
-Missing Value Handling
-        ↓
-Feature Preprocessing
-        ↓
-Logistic Regression
-        ↓
-Prediction
-        ↓
-Streamlit Web Application
+## Inputs
+age, sex, cp, trestbps, chol, fbs, restecg, thalach, exang, oldpeak, slope, ca, thal.
+
+## Dataset target
+Original UCI target: 0 = absence, 1–4 = presence. This project maps 1–4 to class 1.
+
+## College explanation
+**Problem:** Demonstrate supervised classification of heart-disease-related records.
+
+**Algorithm:** Logistic Regression, chosen as a simple baseline for binary classification.
+
+**Preprocessing:** Median imputation and standardization for numerical features; most-frequent imputation for categorical features.
+
+**Application:** Streamlit provides a browser-based interface for entering demonstration values and viewing the model output.
+
+## Limitations
+This is a small historical dataset and the result is not a medical diagnosis. Real clinical use would require extensive validation, privacy controls, safety testing and professional oversight.
+
+## Dataset citation
+Janosi, A., Steinbrunn, W., Pfisterer, M., & Detrano, R. (1989). Heart Disease. UCI Machine Learning Repository. DOI: 10.24432/C52P4X.
